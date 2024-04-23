@@ -7,9 +7,21 @@
         header("location:login.php");
     }
     include 'navbar.php'; 
-
 ?>
-<?php include 'header.php'; ?>
+<header class="site-header d-flex flex-column justify-content-center align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.php">Homepage</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">CAT</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
 
 <section class="section-padding section-bg">
     <div class="container">
@@ -51,11 +63,9 @@
                                         // Display options as checkboxes
                                         foreach ($row_options as $key => $value) {
                                             echo '<div class="form-check">';
-                                            echo '<input class="form-check-input" type="checkbox" id="'.$key.'" name="'.$qstn_id.'[]" value="'.$key.'">';
+                                            echo '<input class="form-check-input" type="checkbox" id="'.$key.'" name="selected_ids['.$qstn_id.'][]" value="'.$key.'">';
                                             echo '<label class="form-check-label" for="'.$key.'">'.$value.'</label>';
                                             echo '</div>';
-                                            // Hidden input to store checkbox IDs
-                                            echo '<input type="hidden" name="selected_ids['.$qstn_id.'][]" value="'.$key.'">';
                                         }
                                     }
                                 }
