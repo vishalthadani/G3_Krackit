@@ -1,5 +1,5 @@
 Description:
-Krackit is a web project built using HTML, CSS, and Bootstrap, along with a MySQL database named db_cap. It allows users to perform certain actions on a website served through localhost using XAMPP.
+Krackit is a web project built using HTML, CSS, and Bootstrap,PHP along with a MySQL database named db_cap. It allows users to perform certain actions on a website served through localhost using XAMPP.
 
 Installation Guide:
 
